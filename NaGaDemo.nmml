@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="NaGaDemo(TBN)" package="com.charcoalstyles.nagademo" version="0.0.0" company="Charcoal Styles" />
+	<app path="Export" file="NaGaDemo" main="Main" />
+	
+	<!-- Setup Flash stuff-->
+	<section if="target_flash">
+		<set name="SWF_VERSION" value="10.1" />
+	</section>
+	
+		<section if="debug">
+			<haxedef name="fdb"/>
+			<unset name="halfsize"/>
+		</section>
+	
+	<!-- Aetup assets directories-->
+	<section if="halfsize">
+		<assets path="AssetsHalfSize" rename="assets" include="*" exclude="nme.svg"/>
+		<haxedef name="halfsize" />
+	</section>
+	<section unless="halfsize">
+		<assets path="Assets" rename="assets" include="*" exclude="nme.svg"/>
+	</section>
+	
+	<!-- Setup screen size-->
+	<set name="normalTarget"/>
+	<section if="target_android">
+		<window width="0" height="0" fps="30" orientation="landscape" resizable="false" background="0x000000"/>
+		<unset name="normalTarget"/>
+	</section>
+	<section if="target_blackberry">
+		<window width="0" height="0" fps="30" orientation="landscape" resizable="false" background="0x000000"/>
+		<unset name="normalTarget"/>
+	</section>
+	<section if="normalTarget">
+		<section if="halfsize">
+			<window width="640" height="360" fps="60" resizable="true" background="0x000000"/>
+		</section>
+		<section unless="halfsize">
+			<window width="1280" height="720" fps="60" resizable="true" background="0x000000"/>
+		</section>
+	</section>
+	
+	<!-- Setup mobileness -->
+	<section if="target_android">
+		<set name="mobile"/>
+	</section>
+	<section if="target_blackberry">
+		<set name="mobile"/>
+	</section>
+		
+	<!-- all levels and Fonts are stored in here, nomatter what screen size-->
+	<assets path="Levels" rename="levels" include="*"/>
+	<assets path="Fonts" rename="fonts" include="*"/>
+		
+	<source path="Source" />
+	
+	<haxelib name="nme" />
+	<haxelib name="flixel"/>
+	
+	<!--icon name="Assets/nme.svg" /-->
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+	
+</project>

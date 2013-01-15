@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <version>3.0.4</version>
+  <bgColor>0x000000</bgColor>
+  <viewPos x="249.0082817589192" y="92.65966424988207"/>
+  <firstLayersTop>false</firstLayersTop>
+  <spriteEntries currentId="14">
+    <group name="skyhammer" idx="1" open="false">
+      <sprite name="Or" idx="2" className="com.skyhammer.entities.OrSwitch" image="Icons/or.png" width="32" height="32" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1"/>
+      <sprite name="Timer" idx="3" className="com.skyhammer.entities.TimerSwitch" image="Icons/Tiemr.png" width="32" height="32" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Float" name="timePeriod" value="1" hidden="false"/>
+          <type typeof="Boolean" name="loop" value="false" hidden="false"/>
+          <type typeof="Boolean" name="startOnSpawn" value="false" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="ToggleSwitch" idx="4" className="com.skyhammer.entities.ToggleSwitch" image="Icons/Toggle.png" width="32" height="32" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Boolean" name="toggleChildren" value="false" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="And" idx="5" className="com.skyhammer.entities.AndSwitch" image="Icons/and.png" width="32" height="32" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="32" boundsHeight="32" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1"/>
+    </group>
+    <group name="RGB" idx="6" open="true">
+      <sprite name="PlayerSpawn" idx="7" className="com.charcoalStyles.rgb.entities.PlayerSpawn" image="Icons/PlayerSpawn.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="false" canRotate="false" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="numberOfBlobs" value="1" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="LevelEnd" idx="8" className="com.charcoalStyles.rgb.entities.LevelEnd" image="Icons/LevelEnd.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="setNumber" value="1" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="PusherU" idx="9" className="com.charcoalStyles.rgb.entities.Pusher" image="Icons/PusherU.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="setDir" value="1" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="PusherL" idx="10" className="com.charcoalStyles.rgb.entities.Pusher" image="Icons/PusherL.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="setDir" value="3" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="PusherD" idx="11" className="com.charcoalStyles.rgb.entities.Pusher" image="Icons/PusherD.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="setDir" value="2" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="PusherR" idx="12" className="com.charcoalStyles.rgb.entities.Pusher" image="Icons/PusherR.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1">
+        <properties>
+          <type typeof="Int" name="setDir" value="4" hidden="false"/>
+        </properties>
+      </sprite>
+      <sprite name="LevelData" idx="13" className="com.charcoalStyles.rgb.entities.LevelData" image="Icons/LevelInfo.png" width="64" height="64" preview="0" anchorX="0" anchorY="0" centerAnchor="false" boundsX="0" boundsY="0" boundsWidth="64" boundsHeight="64" constructor="" creation="" exports="true" canScale="true" canRotate="true" surfaceObject="false" tileIndex="-1" selected="true">
+        <properties>
+          <type typeof="String" name="title" value="" hidden="false"/>
+          <type typeof="String" name="subTitle" value="" hidden="false"/>
+          <type typeof="Boolean" name="isAllMove" value="true" hidden="false"/>
+        </properties>
+      </sprite>
+    </group>
+  </spriteEntries>
+  <layers>
+    <group name="Level1" id="19" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
+      <spritelayer name="Layer1" id="4" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+        <sprite guid="345D12A7-796B-1C6C-91CD-095FF3E64934" x="64" y="64" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="7">
+          <properties/>
+        </sprite>
+        <sprite guid="6ED4860B-C17B-60D5-43E7-A76DFA67DF9C" x="320" y="64" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8">
+          <properties/>
+        </sprite>
+        <sprite guid="88D91E8D-D1EC-5374-E6F9-80B54B5341DF" x="159" y="-72" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="13">
+          <properties>
+            <dataOverride name="title" typeof="String" value="Just Right" idx="0"/>
+          </properties>
+        </sprite>
+      </spritelayer>
+      <maplayer name="Map2" id="5" xScroll="1" yScroll="1" x="0" y="0" width="7" height="3" tileset="../Assets/WorkingTiles.png" tileWidth="64" tileHeight="64" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="64" tileSpacingY="64" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+        <row>1,1,1,1,1,1,1</row>
+        <row>1,0,0,0,0,0,1</row>
+        <row>1,1,1,1,1,1,1</row>
+      </maplayer>
+    </group>
+    <group name="Level2" id="20" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
+      <spritelayer name="Layer1" id="21" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+        <sprite guid="F5C1AB9E-5DA0-F42D-8ED4-3B87F009ED36" x="63" y="63" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="7">
+          <properties/>
+        </sprite>
+        <sprite guid="EE733356-948B-E246-5882-646A6BE89D81" x="64" y="192" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8">
+          <properties/>
+        </sprite>
+        <sprite guid="5A927BEF-65CC-3F8C-16B9-6E7A16004429" x="176" y="-68" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="13">
+          <properties>
+            <dataOverride name="title" typeof="String" value="Around The Bend" idx="0"/>
+          </properties>
+        </sprite>
+      </spritelayer>
+      <maplayer name="Map2" id="22" xScroll="1" yScroll="1" x="0" y="0" width="7" height="5" tileset="../Assets/WorkingTiles.png" tileWidth="64" tileHeight="64" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="64" tileSpacingY="64" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+        <row>1,1,1,1,1,1,1</row>
+        <row>1,0,0,0,0,0,1</row>
+        <row>1,1,1,1,1,0,1</row>
+        <row>1,0,0,0,0,0,1</row>
+        <row>1,1,1,1,1,1,1</row>
+      </maplayer>
+    </group>
+    <group name="Level3" id="23" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
+      <spritelayer name="Layer1" id="24" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+        <sprite guid="E3D71CED-D795-3248-36A1-A20ABB9B2EAB" x="64" y="192" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="7">
+          <properties/>
+        </sprite>
+        <sprite guid="51332A0C-075A-8437-0D8C-2E0B9C808109" x="192" y="192" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8">
+          <properties/>
+        </sprite>
+        <sprite guid="557E70FA-8640-39CF-E382-34A0662B36EA" x="160" y="-72" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="13">
+          <properties>
+            <dataOverride name="title" typeof="String" value="Square Dance" idx="0"/>
+          </properties>
+        </sprite>
+      </spritelayer>
+      <maplayer name="Map2" id="25" xScroll="1" yScroll="1" x="0" y="0" width="7" height="5" tileset="../Assets/WorkingTiles.png" tileWidth="64" tileHeight="64" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="64" tileSpacingY="64" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false">
+        <row>0,0,1,1,1,1,1</row>
+        <row>0,0,1,0,0,0,1</row>
+        <row>1,1,1,0,1,0,1</row>
+        <row>1,0,0,0,0,0,1</row>
+        <row>1,1,1,1,1,1,1</row>
+      </maplayer>
+    </group>
+    <group name="Level4" id="26" xScroll="1" yScroll="1" visible="true" open="true" locked="false" exports="true">
+      <spritelayer name="Layer1" id="27" xScroll="1" yScroll="1" visible="true" locked="false" exports="true" aligned="false" sort="false">
+        <sprite guid="695C236F-1ADC-EC4A-BEA0-265B7192C7C0" x="64" y="64" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="7">
+          <properties/>
+        </sprite>
+        <sprite guid="7B246FB0-1BC0-B99A-4497-A9608CB14BF6" x="192" y="64" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="11">
+          <properties/>
+        </sprite>
+        <sprite guid="C92BF7E1-6956-00FA-4557-155E11C31D9A" x="192" y="192" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="12">
+          <properties/>
+        </sprite>
+        <sprite guid="B67214FA-395C-5A3D-B202-EE605CC551A3" x="320" y="192" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="9">
+          <properties/>
+        </sprite>
+        <sprite guid="1B20ED9D-73BE-1BB3-C0AF-B8C122F371D3" x="320" y="448" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="9">
+          <properties/>
+        </sprite>
+        <sprite guid="62094BDB-9CB4-9EE5-AE85-36FB01DA126D" x="320" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="10">
+          <properties/>
+        </sprite>
+        <sprite guid="EC4F15F5-EE7D-8FF3-CC6C-4CE9B270656A" x="192" y="320" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="11">
+          <properties/>
+        </sprite>
+        <sprite guid="4A0431E0-7645-3ED2-3860-ED19B9B33679" x="64" y="448" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="8">
+          <properties/>
+        </sprite>
+        <sprite guid="43E93D42-105E-E690-D64F-84CF59B8BDF1" x="28" y="278" Z="0" angle="0" scaleX="1" scaleY="1" flipped="false" idx="13">
+          <properties>
+            <dataOverride name="title" typeof="String" value="Push Me Around" idx="0"/>
+          </properties>
+        </sprite>
+      </spritelayer>
+      <maplayer name="Map2" id="28" xScroll="1" yScroll="1" x="0" y="0" width="9" height="9" tileset="../Assets/WorkingTiles.png" tileWidth="64" tileHeight="64" visible="true" hasHits="true" drawIdx="1" collideIdx="1" eraseIdx="0" locked="false" exports="true" tileSpacingX="64" tileSpacingY="64" xStagger="0" tileOffsetX="0" tileOffsetY="0" isMaster="false" mapType="2d" hasHeight="false" repeatX="false" repeatY="false" selected="true">
+        <row>1,1,1,1,1,1,1,1,1</row>
+        <row>1,0,0,0,1,0,0,0,1</row>
+        <row>1,1,1,0,1,0,1,0,1</row>
+        <row>0,0,1,0,0,0,1,0,1</row>
+        <row>0,0,1,1,1,1,1,0,1</row>
+        <row>0,0,1,0,0,0,1,0,1</row>
+        <row>1,1,1,0,1,0,1,0,1</row>
+        <row>1,0,0,0,1,0,0,0,1</row>
+        <row>1,1,1,1,1,1,1,1,1</row>
+      </maplayer>
+    </group>
+  </layers>
+  <tileMatrix currentMatrix="0" rows="3" cols="3" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="">
+    <row>
+      <tile>0</tile>
+      <tile>0</tile>
+      <tile>0</tile>
+    </row>
+    <row>
+      <tile>0</tile>
+      <tile>0</tile>
+      <tile>0</tile>
+    </row>
+    <row>
+      <tile>0</tile>
+      <tile>0</tile>
+      <tile>0</tile>
+    </row>
+    <specialConnections>
+      <sets>
+        <connections name="Single Inside Corners">
+          <entry green="0x1111111" red="0x10000000"/>
+          <entry green="0x11011111" red="0x100000"/>
+          <entry green="0x11111110" red="0x1"/>
+          <entry green="0x11111011" red="0x100"/>
+        </connections>
+        <connections name="Double Inside Corners">
+          <entry green="0x1011111" red="0x10100000"/>
+          <entry green="0x11011110" red="0x100001"/>
+          <entry green="0x11111010" red="0x101"/>
+          <entry green="0x1111011" red="0x10000100"/>
+        </connections>
+        <connections name="Triple Inside Corners">
+          <entry green="0x1011011" red="0x10100100"/>
+          <entry green="0x1011110" red="0x10100001"/>
+          <entry green="0x11011010" red="0x100101"/>
+          <entry green="0x1111010" red="0x10000101"/>
+        </connections>
+        <connections name="Quad Inside Corners">
+          <entry green="0x1011010" red="0x10100101"/>
+          <entry green="0x0" red="0x0"/>
+          <entry green="0x0" red="0x0"/>
+          <entry green="0x0" red="0x0"/>
+        </connections>
+        <connections name="Double Outside Corners">
+          <entry green="0x10" red="0x1011000"/>
+          <entry green="0x1000" red="0x1010010"/>
+          <entry green="0x1000000" red="0x11010"/>
+          <entry green="0x10000" red="0x1001010"/>
+        </connections>
+        <connections name="Double Outside Edges">
+          <entry green="0x1000010" red="0x11000"/>
+          <entry green="0x11000" red="0x1000010"/>
+          <entry green="0x0" red="0x0"/>
+          <entry green="0x0" red="0x0"/>
+        </connections>
+        <connections name="Opposing Double Inside Corners">
+          <entry green="0x1111110" red="0x10000001"/>
+          <entry green="0x11011011" red="0x100100"/>
+          <entry green="0x0" red="0x0"/>
+          <entry green="0x0" red="0x0"/>
+        </connections>
+      </sets>
+      <rows>
+        <row set="0">
+          <tiles>
+            <id>0</id>
+            <id>0</id>
+            <id>0</id>
+            <id>0</id>
+          </tiles>
+        </row>
+        <row set="0">
+          <tiles>
+            <id>0</id>
+            <id>0</id>
+            <id>0</id>
+            <id>0</id>
+          </tiles>
+        </row>
+      </rows>
+    </specialConnections>
+  </tileMatrix>
+  <tileMatrixData name="matrix1" rows="3" cols="3" randomizeMiddle="true" ignoreClear="false" ignoreMapEdges="true" allowSpecialTiles="false" tileset="">
+    <tiles>0,0,0,0,0,0,0,0,0</tiles>
+    <connections set="0">
+      <tiles>0,0,0,0</tiles>
+    </connections>
+    <connections set="0">
+      <tiles>0,0,0,0</tiles>
+    </connections>
+  </tileMatrixData>
+  <tileBrushes/>
+  <colorSwatches/>
+  <bookmarks>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+    <bookmark enabled="false"/>
+  </bookmarks>
+  <colourGrid>
+    <colour>0x000000</colour>
+    <colour>0x9c9c9c</colour>
+    <colour>0xffffff</colour>
+    <colour>0xbe2532</colour>
+    <colour>0xe06e8a</colour>
+    <colour>0x483b2a</colour>
+    <colour>0xa36323</colour>
+    <colour>0xeb8833</colour>
+    <colour>0xf6e16d</colour>
+    <colour>0x2e474d</colour>
+    <colour>0x42881e</colour>
+    <colour>0xa2cd2e</colour>
+    <colour>0x1a2531</colour>
+    <colour>0x025683</colour>
+    <colour>0x33a2f1</colour>
+    <colour>0xb2dcee</colour>
+  </colourGrid>
+  <customPropertyTypes/>
+  <guides>
+    <snap>false</snap>
+    <visible>false</visible>
+    <x>0</x>
+    <y>0</y>
+    <xspace>30</xspace>
+    <yspace>30</yspace>
+    <gridcolour>0x77ff0000</gridcolour>
+    <snaptype>Anchor</snaptype>
+    <paintcontinuous>false</paintcontinuous>
+    <showgameregion>false</showgameregion>
+    <gameregionwidth>1280</gameregionwidth>
+    <gameregionheight>720</gameregionheight>
+    <gameregionopacity>0.3</gameregionopacity>
+    <gameregioncentered>false</gameregioncentered>
+    <minGridSpace>16</minGridSpace>
+    <showregiongrid>false</showregiongrid>
+    <regiongridx>0</regiongridx>
+    <regiongridy>0</regiongridy>
+    <regiongridcolour>0xccffffff</regiongridcolour>
+  </guides>
+</project>
